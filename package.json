@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "dev:admin": "turbo run dev --filter admin",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint -- --fix .",
+    "format": "prettier --write \"**/*.{ts,tsx}\"",
+    "postinstall": "husky install",
+    "type-check": "pnpm lint",
+    "lint-staged": "pnpm format",
+    "commit": "git cz"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "devDependencies": {
+    "@karasports/tsconfig": "workspace:*",
+    "eslint": "^8.48.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.6.10",
+  "name": "v2.karasports.com"
+}

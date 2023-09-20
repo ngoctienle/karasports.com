@@ -1,0 +1,4 @@
+{
+  "extends": "@karasport/tsconfig/base.json",
+  "include": [".", ".eslintrc.js", ".commitlintrc.ts"]
+}

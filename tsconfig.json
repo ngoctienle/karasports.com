@@ -1,0 +1,3 @@
+{
+  "extends": "@karasports/tsconfig/base.json"
+}
