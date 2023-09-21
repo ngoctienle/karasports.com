@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  webapp:
+    container_name: website_dev
+    build:
+      context: ../
+      dockerfile: apps/website/Dockerfile
+    restart: always
+    ports:
+      - 5010:3000

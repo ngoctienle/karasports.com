@@ -3,14 +3,19 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:web": "turbo run dev --filter website",
+    "buid:web": "turbo run build --filter website",
     "dev:admin": "turbo run dev --filter admin",
+    "build:admin": "turbo run build --filter admin",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint -- --fix .",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "postinstall": "husky install",
     "type-check": "pnpm lint",
     "lint-staged": "pnpm format",
-    "commit": "git cz"
+    "commit": "git cz",
+    "deploy:dev": "docker compose -f docker/docker-compose.dev.yml build && docker compose up -d",
+    "deploy:prod": "docker compose -f docker/docker-compose.prod.yml build && docker compose up -d"
   },
   "dependencies": {
     "@commitlint/cli": "^17.7.1",

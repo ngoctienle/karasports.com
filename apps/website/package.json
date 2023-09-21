@@ -1,5 +1,5 @@
 {
-  "name": "admin",
+  "name": "website",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@karasports/tailwindcss": "workspace:*",
-    "@karasports/tsconfig": "workspace:*",
+    "@karasports/sdk": "workspace:*",
     "@karasports/ui": "workspace:*",
+    "@next/bundle-analyzer": "^13.5.2",
     "next": "^13.4.19",
+    "next-compose-plugins": "^2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@karasports/tailwindcss": "workspace:*",
+    "@karasports/tsconfig": "workspace:*",
     "@next/eslint-plugin-next": "^13.4.19",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",

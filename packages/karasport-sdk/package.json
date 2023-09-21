@@ -1,0 +1,27 @@
+{
+  "name": "@karasports/sdk",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "./form/index.ts",
+    "./state/index.ts",
+    "./validate/index.ts",
+    "./api/index.ts"
+  ],
+  "dependencies": {
+    "@tanstack/react-query": "^4.35.3",
+    "axios": "^1.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.1",
+    "zod": "^3.22.2",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@karasports/tsconfig": "workspace:*",
+    "@tanstack/react-query-devtools": "^4.35.3",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7"
+  }
+}
