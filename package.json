@@ -4,7 +4,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "dev:web": "turbo run dev --filter website",
-    "buid:web": "turbo run build --filter website",
+    "build:web": "turbo run build --filter website",
     "dev:admin": "turbo run dev --filter admin",
     "build:admin": "turbo run build --filter admin",
     "lint": "turbo run lint",
