@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  webapp:
+  website:
     container_name: website_prod
     env_file:
       - ../apps/website/.env.production
