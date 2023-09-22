@@ -7,6 +7,9 @@ const baseUrl = (): string => {
 }
 
 const DEFAULT_PATHS = {
+  app: {
+    root: '/'
+  },
   auth: {
     register: '/auth/register',
     login: '/auth/login'

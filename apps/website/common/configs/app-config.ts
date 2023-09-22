@@ -1,6 +1,7 @@
 import appRouters from './app-routers'
 
 type EnviromentType = 'development' | 'production'
+export type LanguageType = 'en' | 'vi'
 
 interface AppConfig {
   env: EnviromentType
@@ -16,6 +17,7 @@ export default Object.freeze({
   env: process.env.NODE_ENV as EnviromentType,
   baseUrl: appRouters.utils.generateUrl(),
   publicRoutes: [
+    appRouters.paths.en.app.root,
     appRouters.paths.en.auth.login,
     appRouters.paths.en.auth.register
   ],
