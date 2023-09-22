@@ -1,5 +1,6 @@
 import { ColorSchemeScript, ThemeProvider } from '@karasports/ui'
 import { Inter } from 'next/font/google'
+import { Providers } from '@root/components/providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +15,9 @@ export default function AppLayout({ children }: AppLayoutProps): JSX.Element {
         <ColorSchemeScript />
       </head>
       <body className={inter.className}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <Providers>{children}</Providers>
+        </ThemeProvider>
       </body>
     </html>
   )
